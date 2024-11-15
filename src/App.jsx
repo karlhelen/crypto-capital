@@ -1,29 +1,62 @@
-import './App.css';
+import React from 'react';
+import HomePage from './pages/home';
+import LoginPage from './pages/login';
+import SignupPage from './pages/signup'; 
+import Header from './components/header';
+import Footer from './components/footer';
 
-function App() {
+export function Home() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div className="Home">
+      <Header />
+      <HomePage />
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export function Coins() {
+
+  return (
+    <div className="Coins">
+      
+    </div>
+  );
+}
+
+export function Web3() {
+
+  return (
+    <div className="Web3">
+      
+    </div>
+  );
+}
+
+export function Contacts() {
+
+  return (
+    <div className="Contacts">
+      
+    </div>
+  );
+}
+
+export function Login() {
+
+  return (
+    <div>
+      <LoginPage />
+    </div>
+  );
+}
+
+export function Signup() {
+
+  return (
+    <div>
+      <SignupPage />
+    </div>  
+  );
+}
